@@ -1,0 +1,40 @@
+modules = ["kotlin"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Android ÇARX App"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "android_app"
+
+[[workflows.workflow]]
+name = "Android ÇARX App"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./gradlew installDebug && adb shell am start -n com.wheel.carx/.MainActivity"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "android_app"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd app && ./gradlew assembleDebug && adb install -r build/outputs/apk/debug/app-debug.apk && adb shell am start -n com.wheel.carx/.MainActivity"
+
+[deployment]
+run = ["sh", "-c", "./gradlew installDebug && adb shell am start -n com.wheel.carx/.MainActivity"]

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ÇARX</string>
+    
+    <!-- Main Activity -->
+    <string name="spin_wheel">ÇARXI FIRLATMAQ</string>
+    <string name="manage_segments">SEQMENTLƏRİ İDARƏ ET</string>
+    <string name="winner_message">Qazanan: %1$s</string>
+    <string name="money_bag">Pul kisəsi</string>
+    <string name="coins">Sikkələr</string>
+    
+    <!-- Segment Dialog -->
+    <string name="add_segment">Seqment əlavə et</string>
+    <string name="edit_segment">Seqmenti redaktə et</string>
+    <string name="segment_name">Seqment adı</string>
+    <string name="segment_name_hint">Adı daxil edin</string>
+    <string name="segment_color">Seqment rəngi</string>
+    <string name="red">Qırmızı</string>
+    <string name="green">Yaşıl</string>
+    <string name="blue">Mavi</string>
+    <string name="save">Yadda saxla</string>
+    <string name="cancel">Ləğv et</string>
+    <string name="delete">Sil</string>
+    <string name="error_empty_name">Seqment adı boş ola bilməz</string>
+    
+    <!-- Admin Panel -->
+    <string name="admin_panel">Admin Panel</string>
+    <string name="admin_access">Admin giriş</string>
+    <string name="enter_password">Şifrəni daxil edin:</string>
+    <string name="password_hint">Şifrə</string>
+    <string name="login">Giriş et</string>
+    <string name="wrong_password">Səhv şifrə!</string>
+    <string name="admin_instructions">Qazananı təyin etmək üçün aşağıdakı seqmentlərdən birini seçin:</string>
+    <string name="save_selection">Seçimi yadda saxla</string>
+    <string name="clear">Təmizlə</string>
+    <string name="winner_set">Qazanan təyin edildi: %1$s</string>
+    <string name="winner_cleared">Qazanan seçimi təmizləndi</string>
+</resources>
